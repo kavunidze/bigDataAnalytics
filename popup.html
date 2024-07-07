@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Book Your Ticket</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+</head>
+
+<body>
+    <section id="main-container">
+        <div class="top-section">
+            <h1 id="title">Welcome To BYT</h1>
+            <input type="text" placeholder="Search your ticket here" class="search-bar">
+        </div>
+        <hr>
+
+        <!-- ----------------------------------------------------------- -->
+        <div id="ticket-container">
+        </div>
+        <div class="logout-btn-wrapper">
+            <button id="logout_btn">Log Out</button>
+        </div>
+
+        <!-- ----------------------------------------------------------- -->
+    </section>
+
+    <section id="login_container">
+        <h1>Login to continue</h1>
+        <div class='g-sign-in-button' id="login_btn">
+            <div class=content-wrapper>
+                <div class='logo-wrapper'>
+                    <img src='https://developers.google.com/identity/images/g-logo.png'>
+                </div>
+                <span class='text-container'>
+                    <span>Sign in with Google</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
